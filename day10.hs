@@ -26,7 +26,7 @@ lookAndSay = flattenTuples . convertRuns
 main :: IO ()
 main = do
   let inputInts = stringToInts "1321131112"
-      numIterations = 40
+      numIterations = 50
       result = (iterate lookAndSay inputInts) !! numIterations
   print $ length result
 
